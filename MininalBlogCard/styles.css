@@ -1,0 +1,131 @@
+/* Estilos generales para la tarjeta del blog */
+.blog-post {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 300px; /* Ancho máximo de la tarjeta */
+    margin: 16px auto; /* Centra la tarjeta horizontalmente */
+    padding: 16px;
+    text-align: center;
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2); /* Sombra de la tarjeta más densa */
+}
+
+/* Efecto de hover en la tarjeta */
+.blog-post:hover {
+    box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.25); /* Aumenta la sombra al hacer hover */
+}
+
+/* Contenedor de imagen */
+.blog-image-container {
+    height: 110px; /* Altura fija para la imagen */
+    overflow: hidden; /* Oculta el contenido que desborda */
+    transition: height 0.5s ease; /* Transición suave para la altura */
+}
+
+/* Imagen del blog */
+.blog-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para la imagen */
+}
+
+/* Efecto de hover en la imagen */
+.blog-image:hover {
+    transform: translateY(-5px) scale(1.05); /* Levanta la imagen hacia arriba y la aumenta */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3); /* Sombra más densa para la imagen */
+}
+
+/* Título del blog */
+.blog-title {
+    font-size: 1.8em; /* Aumenta el tamaño del título */
+    margin: 12px 0;
+    color: #333; /* Color del texto más oscuro */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente para un estilo más limpio */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Añade sombra al texto */
+}
+
+/* Descripción del blog */
+.blog-description {
+    font-size: 1em; /* Tamaño de la fuente */
+    color: #fff; /* Color del texto blanco para mayor contraste */
+    margin-bottom: 16px;
+    line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+    font-family: 'Georgia', serif; /* Cambia la fuente a algo más elegante */
+    max-height: 0; /* Oculta la descripción inicialmente */
+    visibility: hidden; /* Oculta la descripción inicialmente */
+    opacity: 0; /* Inicialmente oculta */
+    transform: translateY(10px); /* Mueve la descripción hacia abajo */
+    transition: visibility 0s 0.5s, opacity 0.5s ease, max-height 0.5s ease, transform 0.5s ease; /* Transiciones suaves */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para la descripción */
+    padding: 8px; /* Espaciado interno de la descripción */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Efecto de hover en la descripción */
+.blog-post:hover .blog-description {
+    max-height: 100px; /* Ajusta la altura máxima al expandir */
+    visibility: visible; /* Muestra la descripción al hacer hover */
+    opacity: 1; /* Vuelve la descripción visible */
+    transform: translateY(0); /* Lleva la descripción a su posición original */
+    transition: visibility 0s 0s, opacity 0.5s ease, max-height 0.5s ease, transform 0.5s ease; /* Sin retardo para visibilidad */
+}
+
+/* Tag del blog */
+.blog-tag {
+    display: block; /* Cambiado a block para ocupar toda la línea */
+    background-color: #ce1286; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 8px 12px; /* Espaciado alrededor del texto */
+    border-radius: 4px; /* Bordes redondeados, pero aún rectangular */
+    font-size: 0.9em; /* Tamaño de la fuente */
+    text-align: center; /* Centrar el texto dentro del rectángulo */
+    margin-bottom: 8px; /* Espacio adicional debajo */
+    width: fit-content; /* Ajustar el ancho al contenido */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Efecto de hover en el tag */
+.blog-tag:hover {
+    background-color: #a21068; /* Cambia a un color más oscuro al pasar el mouse */
+}
+
+/* Media Query para pantallas pequeñas (menos de 640px) */
+@media (max-width: 640px) {
+    .blog-post {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        margin: 16px auto; /* Centra la tarjeta */
+    }
+
+    .blog-title {
+        font-size: 1.4em; /* Ajusta el tamaño del título en pantallas pequeñas */
+    }
+
+    .blog-description {
+        font-size: 0.9em; /* Ajusta el tamaño de la descripción en pantallas pequeñas */
+    }
+
+    .blog-tag {
+        padding: 6px 10px; /* Ajusta el espaciado del tag */
+    }
+}
+
+/* Media Query para pantallas grandes (menos de 1280px) */
+@media (max-width: 1280px) {
+    .blog-post {
+        width: 80%; /* Ajusta el ancho al 80% del contenedor */
+        margin: 16px auto; /* Centra la tarjeta */
+    }
+
+    .blog-title {
+        font-size: 1.6em; /* Ajusta el tamaño del título */
+    }
+
+    .blog-description {
+        font-size: 0.95em; /* Ajusta el tamaño de la descripción */
+    }
+
+    .blog-tag {
+        padding: 7px 11px; /* Ajusta el espaciado del tag */
+    }
+}
