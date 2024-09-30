@@ -4,6 +4,10 @@
 
 Esto es una web de visualización de publicaciones de blog que utiliza HTML y CSS para crear tarjetas atractivas y responsivas. Cada tarjeta presenta una imagen, un título, un tag y una descripción que aparece al pasar el cursor sobre la tarjeta.
 
+## Previsualización
+
+- <img src="./img/27e1e8fb945fb1580c5db3d55a250285.jpg" alt="Prueba" width=""/>
+
 ## Características
 
 - **Diseño Responsivo**: Las tarjetas se adaptan a diferentes tamaños de pantalla.
@@ -22,4 +26,4 @@ Esto es una web de visualización de publicaciones de blog que utiliza HTML y CS
 ├── index.html
 ├── styles.css
 └── img
-    └── 27e1e8fb945fb1580c5db3d55a250285.jpg
+    
