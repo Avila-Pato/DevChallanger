@@ -2,7 +2,7 @@
 
 Este es un proyecto simple de una página de preguntas frecuentes (FAQ) creado para practicar las bases de **HTML** y **CSS**, así como para trabajar con media queries y hacer la página responsiva a diferentes tamaños de pantalla.
 
-![Screenshot of the FAQ Page]("/img/Captura de pantalla_30-9-2024_12514_127.0.0.1.jpeg")  <!-- Aquí se coloca la ruta de la imagen -->
+- <img src="./img/Captura de pantalla_30-9-2024_12514_127.0.0.1.jpeg" alt="Prueba" width="200"/>
 
 
 ## Descripción
