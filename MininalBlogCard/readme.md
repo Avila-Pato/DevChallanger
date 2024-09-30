@@ -6,7 +6,7 @@ Esto es una web de visualización de publicaciones de blog que utiliza HTML y CS
 
 ## Previsualización
 
-- <img src="./img/27e1e8fb945fb1580c5db3d55a250285.jpg" alt="Prueba" width=""/>
+- <img src="./img/Capibara Chino.png" alt="Prueba" width=""/>
 
 ## Características
 
