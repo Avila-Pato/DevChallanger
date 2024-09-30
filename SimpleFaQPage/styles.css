@@ -1,0 +1,164 @@
+/* Estilos base - Se aplicarán por defecto */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.simple-page {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 90%;
+}
+
+h2 {
+    color: #6200ea;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+code {
+    background-color: #f4f4f9;
+    padding: 0.2rem;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #6200ea;
+    color: white;
+}
+
+/* Estilos para pantallas grandes (ancho mínimo 1280px) */
+@media (min-width: 1280px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .simple-page {
+        max-width: 70%;
+    }
+}
+
+a {
+    color: #007BFF;
+    /* Color azul para el texto del enlace */
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+    font-weight: bold;
+    /* Hace que el enlace sea en negrita */
+    padding: 10px 15px;
+    /* Añade algo de espacio alrededor del enlace */
+    border: 2px solid #007BFF;
+    /* Borde azul alrededor del enlace */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transición suave para el hover */
+}
+
+/* Estilo para el enlace al pasar el ratón */
+a:hover {
+    background-color: #007BFF;
+    /* Fondo azul al hacer hover */
+    color: white;
+    /* Cambia el texto a blanco al hacer hover */
+}
+
+
+
+/* Estilos para pantallas medianas (ancho entre 1024px y 1279px) */
+@media (max-width: 1279px) and (min-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .simple-page {
+        max-width: 85%;
+    }
+}
+
+
+
+/* Estilos para pantallas pequeñas (ancho máximo 640px) */
+@media (max-width: 640px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .simple-page {
+        max-width: 95%;
+        padding: 0.5rem;
+    }
+
+    li {
+        padding: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    footer {
+        padding: 0.8rem;
+    }
+}
