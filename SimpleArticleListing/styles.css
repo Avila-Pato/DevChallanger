@@ -1,0 +1,150 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Cambié a una fuente más moderna */
+    background-color: #200202;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #f39c12, #e74c3c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Efecto de resplandor para el texto */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #f39c12, 0 0 20px #e74c3c, 0 0 30px #e67e22;
+    }
+    to {
+        text-shadow: 0 0 20px #e74c3c, 0 0 30px #f39c12, 0 0 40px #d35400;
+    }
+}
+
+/* Contenedor de artículos centrado */
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Estilos de cada artículo */
+.article {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150%; /* Ajustable a tu preferencia */
+    max-width: 800px;
+    transition: transform 0.2s;
+}
+
+.article:hover {
+    transform: translateY(-10px);
+}
+
+/* Imagen del artículo */
+.article img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Contenedor de texto (descripción y fecha) */
+.article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Fecha del artículo */
+.article time {
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Descripción */
+.article p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* RESPONSIVIDAD */
+
+/* Pantallas de 1280px */
+@media (max-width: 1280px) {
+    .article {
+        width: 85%;
+    }
+
+    header {
+        font-size: 2.5rem;
+    }
+}
+
+/* Pantallas de 1024px */
+@media (max-width: 1024px) {
+    .article {
+        width: 80%;
+    }
+
+    header {
+        font-size: 2.2rem;
+    }
+}
+
+/* Pantallas de 640px */
+@media (max-width: 640px) {
+    .article {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 95%;
+    }
+
+    .article img {
+        width: 100%;
+        height: auto;
+    }
+
+    header {
+        font-size: 2rem;
+    }
+
+    .article-content {
+        text-align: center;
+    }
+
+    .article p {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+}
