@@ -1,3 +1,4 @@
+/* Estilos globales */
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +20,8 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    max-width: 400px;
+    width: 100%;
 }
 
 .icon i {
@@ -34,12 +37,6 @@ h1 {
 p {
     font-size: 16px;
     margin-bottom: 20px;
-}
-
-h4 {
-    font-size: 10px;
-    margin-top: 10px;
-    color: gray;
 }
 
 form input {
@@ -62,4 +59,110 @@ form button {
 
 form button:hover {
     background-color: #005bb5;
+}
+h4{
+    color: gray;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+/* Media Query para pantallas de 1280px o más */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 600px;
+        padding: 50px;
+    }
+
+    .icon i {
+        font-size: 64px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    form input {
+        font-size: 18px;
+    }
+
+    form button {
+        font-size: 18px;
+    }
+}
+
+/* Media Query para pantallas entre 1024px y 1279px */
+@media (max-width: 1279px) and (min-width: 1024px) {
+    .container {
+        max-width: 500px;
+        padding: 45px;
+    }
+
+    .icon i {
+        font-size: 56px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    form input {
+        font-size: 17px;
+    }
+
+    form button {
+        font-size: 17px;
+    }
+    
+}
+
+/* Media Query para pantallas de 640px o menos */
+@media (max-width: 640px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    .icon i {
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+    h4 {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+   
+
+    form input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    form button {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
