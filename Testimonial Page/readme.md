@@ -1,8 +1,4 @@
-# Reviewers Section
 
-## Descripción
-
-La **Reviewers Section** es una parte de una aplicación web diseñada para proporcionar recursos y herramientas útiles a los revisores de documentos académicos, manuscritos o artículos de investigación. Esta sección ofrece una estructura clara y sencilla para ayudar a los usuarios a acceder a guías, listas de verificación y otros materiales que facilitan el proceso de revisión, asegurando que sea riguroso, eficiente y consistente.
 
 ## Propósito
 
@@ -28,4 +24,4 @@ El objetivo de este proyecto es crear una interfaz visualmente atractiva y funci
 
 ## Contribuciones
 
-Este proyecto está abierto a contribuciones. Si tienes ideas o mejoras, no dudes en crear un pull request o abrir una issue.
+Este proyecto está abierto a contribuciones. Si tienes ideas o mejoras, no dudes en crear un pull request 
