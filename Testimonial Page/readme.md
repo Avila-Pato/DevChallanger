@@ -24,7 +24,7 @@ El objetivo de este proyecto es crear una interfaz visualmente atractiva y funci
 
 ## Vista previa
 
-![Reviewers Section]("./img/Captura de pantalla_4-10-2024_137_127.0.0.1.jpeg")
+- <img src="./img/Captura de pantalla_4-10-2024_137_127.0.0.1.jpeg" alt="Prueba" width=""/>
 
 ## Contribuciones
 
