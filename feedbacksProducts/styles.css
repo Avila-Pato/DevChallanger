@@ -1,0 +1,58 @@
+body {
+    background: url('./img/colorful-fluid-gradient-background-generative-ai_913967-5822.jpg') no-repeat center center;
+    background-size: cover; /* Escala la imagen para cubrir el contenedor */
+    min-height: 100vh; /* Asegura que el fondo cubra toda la ventana */
+    margin: 0; /* Elimina los márgenes por defecto */
+    color: #ffffff; /* Cambia el color del texto a blanco para mayor contraste */
+}
+
+.feature-card {
+    background-color: rgba(30, 30, 30, 0.8); /* Color oscuro con opacidad */
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra más suave */
+}
+
+.display-4 {
+    font-size:  50px;
+    font-weight: bold;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-emoji {
+    font-size: 50px; /* Aumentar el tamaño de los emojis */
+}
+
+.feature-title {
+    font-size: 24px;
+    margin: 15px 0; /* Espaciado más grande */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.feature-description {
+    font-size: 16px;
+    color: #d1d1d1; /* Color más claro para la descripción */
+}
+
+/* Ajustes de diseño para pantallas pequeñas */
+@media (max-width: 900px) {
+    .feature-card {
+        width: 100%; /* Cards toman el ancho completo en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 680px) {
+    .feature-card {
+        width: 100%; /* Cards apilan verticalmente en pantallas muy pequeñas */
+    }
+}
+
+/* Asegura que las imágenes no se desborden */
+.card-img-top {
+    border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
