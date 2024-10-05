@@ -1,0 +1,181 @@
+/* Estilos del switch */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2e;
+    color: white;
+    text-align: center;
+  }
+  
+  .toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px; /* Añadir un espacio entre Monthly y Yearly */
+  }
+  
+  .yearly-label {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  /* Resaltar la oferta de 40% OFF */
+  .discount {
+    color: #ffbe00;  /* Color vibrante para resaltar */
+    background-color: #6200ea;  /* Fondo morado para hacer contraste */
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 900;  /* Texto más grueso */
+    margin-left: 8px;
+    display: inline-block;
+    animation: pulse 1.5s infinite;  /* Efecto de pulso */
+  }
+  
+  /* Animación de pulso para la oferta */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);  /* Aumenta ligeramente el tamaño */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Switch estilo interruptor */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #6200ea;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Slider redondo */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* Resto de los estilos de la tabla de precios */
+  .pricing-table {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .pricing-option {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .price {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features li {
+    margin: 5px 0;
+  }
+  
+  .features .disabled {
+    color: #777;
+  }
+  
+  .btn {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #3700b3;
+  }
+
+
+
+  /* Estilo para resaltar la tabla más popular */
+.popular {
+    border: 4px solid #ffbe00; /* Borde dorado brillante */
+    background-color: #444444; /* Fondo más oscuro para resaltar */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 0 20px rgba(255, 190, 0, 0.8); /* Sombra dorada brillante */
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .popular:hover {
+    transform: scale(1.1); /* Aumenta más el tamaño al pasar el mouse */
+    box-shadow: 0 0 30px rgba(255, 190, 0, 1); /* Más intensidad en la sombra */
+  }
+  
+  /* Etiqueta para indicar que es la opción más popular */
+  .popular::before {
+    content: "Most Popular";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ffbe00;
+    color: black;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 190, 0, 0.8);
+  }
+  

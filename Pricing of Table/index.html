@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Table Section</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="pricing-container">
+    <h1>It's easy to get started</h1>
+    <p>Choose a plan tailored to your needs</p>
+
+    <!-- Switch tipo interruptor -->
+    <div class="toggle-container">
+      <span>Monthly</span>
+      <label class="switch">
+        <input type="checkbox" id="toggle-switch" />
+        <span class="slider round"></span>
+      </label>
+      <span class="yearly-label">Yearly <span class="discount">40% OFF</span></span>
+    </div>
+  
+    <section class="pricing-table">
+      <!-- Opción Starter Gratis -->
+      <div class="pricing-option starter">
+        <h2>Starter</h2>
+        <p class="price">$0 <span>/month</span></p> <!-- Precio gratis -->
+        <ul class="features">
+          <li><span>✔</span> One project</li>
+          <li class="disabled">Your dashboard</li>
+          <li class="disabled">Advanced charts</li>
+          <li class="disabled">Chat support</li>
+        </ul>
+        <button class="btn">Get started</button>
+      </div>
+
+      <!-- Opción Standard -->
+      <div class="pricing-option standard">
+        <h2>Standard</h2>
+        <p class="price" id="standard-price">$12.99 <span>/month</span></p>
+        <ul class="features">
+          <li><span>✔</span> Two projects</li>
+          <li><span>✔</span> Your dashboard</li>
+          <li class="disabled">Components included</li>
+          <li class="disabled">Advanced charts</li>
+        </ul>
+        <button class="btn">Get started</button>
+      </div>
+
+      <!-- Opción Custom (Popular) -->
+      <div class="pricing-option custom popular">
+        <h2>Custom</h2>
+        <p class="price" id="custom-price">$29.99 <span>/month</span></p>
+        <ul class="features">
+          <li><span>✔</span> Unlimited projects</li>
+          <li><span>✔</span> Your dashboard</li>
+          <li><span>✔</span> Unlimited Components</li>
+          <li class="disabled"> Advanced charts</li>
+        </ul>
+        <button class="btn">Get started</button>
+      </div>
+      
+      <!-- Opción Pro -->
+      <div class="pricing-option pro">
+        <h2>Pro</h2>
+        <p class="price" id="pro-price">$49.99 <span>/month</span></p>
+        <ul class="features">
+          <li><span>✔</span> Unlimited projects</li>
+          <li><span>✔</span> Your dashboard</li>
+          <li><span>✔</span> All components included</li>
+          <li><span>✔</span> Premium support</li>
+        </ul>
+        <button class="btn">Get started</button>
+      </div>
+    </section>
+  </section>
+
+  <!-- Lógica para alternar entre precios mensuales y anuales -->
+  <script>
+    const toggleSwitch = document.getElementById('toggle-switch');
+    const standardPrice = document.getElementById('standard-price');
+    const customPrice = document.getElementById('custom-price');
+    const proPrice = document.getElementById('pro-price');
+
+    toggleSwitch.addEventListener('change', function () {
+      if (this.checked) {
+        // Precios anuales (40% de descuento)
+        standardPrice.innerHTML = '$7.79 <span>/year</span>';
+        customPrice.innerHTML = '$17.99 <span>/year</span>';
+        proPrice.innerHTML = '$29.99 <span>/year</span>';
+      } else {
+        // Precios mensuales
+        standardPrice.innerHTML = '$12.99 <span>/month</span>';
+        customPrice.innerHTML = '$29.99 <span>/month</span>';
+        proPrice.innerHTML = '$49.99 <span>/month</span>';
+      }
+    });
+  </script>
+</body>
+</html>
