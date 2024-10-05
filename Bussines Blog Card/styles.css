@@ -1,0 +1,111 @@
+/* Body to center the card */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Horizontally center the card */
+    align-items: center; /* Vertically center the card */
+    background-color: #f0f0f0;
+  }
+  
+  /* Card Container */
+  .business-card {
+    width: 100%;
+    max-width: 350px; /* Manteniendo el tamaño original */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header Image */
+  .header-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Content Section */
+  .card-content {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .card-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  /* Footer Profile Section */
+  .card-footer {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid #eee;
+  }
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .profile-info h3 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .profile-info p {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  /* Responsive Design */
+  
+  /* For screens 1280px or larger */
+  @media (min-width: 1280px) {
+    .business-card {
+      max-width: 350px; /* Manteniendo el tamaño original en pantallas grandes */
+    }
+  }
+  
+  /* For screens 640px or smaller */
+  @media (max-width: 640px) {
+    .business-card {
+      width: 100%;
+      max-width: 90%; /* Pequeño ajuste para pantallas móviles */
+    }
+  
+    .card-content h2 {
+      font-size: 1.3rem;
+    }
+  
+    .card-content p {
+      font-size: 0.9rem;
+    }
+  
+    .profile-pic {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .profile-info h3 {
+      font-size: 0.9rem;
+    }
+  
+    .profile-info p {
+      font-size: 0.8rem;
+    }
+  }
+  
