@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Team</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: sans-serif;
+            background-color: #f0f4f8; 
+        }
+
+        .team-member {
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            transition: transform 0.3s;
+            margin-bottom: 20px; /* Margen inferior entre tarjetas */
+            background-color: white; /* Fondo blanco para las tarjetas */
+        }
+
+        .team-member:hover {
+            transform: scale(1.05); 
+        }
+
+        /* Margen entre imágenes dentro de las tarjetas */
+        .team-member img {
+            width: 120px;
+            height: 120px; 
+            border-radius: 50%;
+            object-fit: cover; 
+            border: 3px solid #fff;
+            margin: 0 10px; /* Separación horizontal entre imágenes */
+        }
+
+        h1 {
+            font-size: 2rem; 
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem; 
+            margin-bottom: 20px; 
+        }
+
+        /* Asegurar que las imágenes se mantengan centradas */
+        .team-member img {
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+
+<section class="container py-5" > 
+    <div class="row" >
+        <div class="col-md-4" >
+            <h2>Our Team</h2>
+            <h1>Meet the Brain</h1>
+            
+            <p>We are proud to have them as part of our community and look forward to continuing to push the boundaries of what's possible in the world of digital art.</p>
+             
+            <a href="#">See all members ></a>
+
+            <!-- Noah Conti permanece en esta sección -->
+            <div class="col-md-12 col-sm-12 team-member" style="background-color: #98fb98; margin-top: 30px; margin-left: -4px;">
+                <img src="img/person_5.png" alt="Noah Conti">
+                <h3>Noah Conti</h3>
+                <p>Content Creator</p>
+            </div>
+        </div>
+        
+        <div class="col-md-8" >
+            <div class="row "  >
+                <div class="col-md-6 col-sm-12 team-member" style="background-color: #f0f8ff; margin-left: -10px;">
+                    <img src="img/person_1.png" alt="Liam Novak">
+                    <h3>Liam Novak</h3>
+                    <p>Software Engineer</p>
+                </div>
+                <div class="col-md-6 col-sm-12 team-member" style="background-color: #ffe4e1;  margin-left: 10px;">
+                    <img src="img/person_2.png" alt="Sophia Moretti">
+                    <h3>Sophia Moretti</h3>
+                    <p>Business Development Manager</p>
+                </div>
+                <div class="col-md-6 col-sm-12 team-member" style="background-color: #cceeff; margin-left: -10px;">
+                    <img src="img/person_3.png" alt="Ethan Rossi">
+                    <h3>Ethan Rossi</h3>
+                    <p>Business Development Manager</p>
+                </div>
+                <div class="col-md-6 col-sm-12 team-member" style="background-color: #fafad2; margin-left: 10px;">
+                    <img src="img/person_4.png" alt="Isabella Ricci">
+                    <h3>Isabella Ricci</h3>
+                    <p>UX Designer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
