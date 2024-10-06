@@ -1,0 +1,19 @@
+/* styles.css */
+
+body {
+    background-color: #ffffff; /* Fondo claro */
+    color: #000000; /* Texto claro */
+  }
+  
+  .dark {
+    background-color: #1f2937; /* Fondo oscuro */
+    color: #ffffff; /* Texto oscuro */
+  }
+  
+  /* También puedes ajustar los colores de los títulos */
+  h1, h2, h3, h4, h5, h6 {
+    color: inherit; /* Asegúrate de que los títulos tomen el color del cuerpo */
+  }
+  
+  /* Ajusta otros elementos según sea necesario */
+  
