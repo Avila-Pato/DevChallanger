@@ -50,4 +50,4 @@ El propósito de este proyecto es proporcionar un entorno interactivo donde los 
 
 ## Previsualización
 
-- <img src="./src/assets/Captura de pantalla_7-10-2024_124437_localhost.jpeg" alt="Prueba" width=""/>
+- <img src="./frontend/src/assets/Captura de pantalla_7-10-2024_124437_localhost.jpeg" alt="Prueba" width=""/>
